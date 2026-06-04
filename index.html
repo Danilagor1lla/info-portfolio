@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images\cart.jpg">
+</head>
+<body>
+  <div class="noise"></div>
+  <nav class="island-nav" id="navbar">
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+      <span class="theme-icon">🌙</span>
+    </button>
+  </nav>
+  <header class="hero section" id="home">
+    <div class="hero-content">
+      <h1>
+        Hello, I’m <span class="gradient-name">Danila</span><br />
+        <span class="typewriter-wrapper">
+          <span class="typed-title"></span>
+          <span class="cursor-title"></span>
+        </span>
+      </h1>
+      <p class="hero-text">
+        Я начинающий бизнес-аналитик, а также веб-разработчик самоучка
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary">Смотреть проекты</a>
+        <a href="#contact" class="btn secondary">Связаться</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="card-header">
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <p>developer.js</p>
+      </div>
+
+      <pre><code>const developer = {
+  name: "Danila",
+  stack: ["HTML", "CSS", "JS"],
+  goal: "Internship",
+  status: "learning every day"
+};</code></pre>
+    </div>
+
+    <a href="#about" class="scroll-hint">Scroll down</a>
+  </header>
+  <main>
+    <section class="section about" id="about">
+      <div class="section-title">
+        <p class="eyebrow">About me</p>
+        <h2>Немного обо мне</h2>
+      </div>
+      <div class="about-grid">
+        <div class="glass-card">
+          <h3>Кто я</h3>
+          <p>
+            Я студент первого курса РТУ МИРЭА (направление 09.03.03 «Прикладная информатика»), целенаправленно развиваюсь в сторону профессии бизнес-аналитика. Учусь структурировать информацию, работать с требованиями, видеть процессы системно — и переводить потребности бизнеса на язык, понятный разработчикам.
+          </p>
+          <p>
+            Параллельно с учебой самостоятельно осваиваю веб-разработку. Это помогает мне глубже понимать техническую сторону продуктов, говорить с командами на одном языке и создавать прототипы, которые можно сразу «пощупать». Домашние проекты для меня — это возможность не только прокачать код, но и проверить гипотезы: как должен быть устроен интерфейс, логика и пользовательский опыт.
+          </p>
+        </div>
+        <div class="glass-card">
+          <h3>Хобби</h3>
+          <p>
+            С шести лет моим главным увлечением был футбол. Я профессионально занимался этим спортом, прошёл через академию «Локомотива» — и до сих пор благодарен этому этапу за дисциплину, командный дух и умение работать на результат.
+          </p>
+          <p>
+            Сегодня я поддерживаю активный образ жизни с помощью большого тенниса и волейбола. Мне нравится динамика, быстрая реакция и интеллектуальная нагрузка, которую дают эти игры.
+          </p>
+          <p>
+            Но есть и другая сторона — экстремальные хобби. Я катаюсь на эндуро мотоцикле, езжу на сплавы по рекам. Это про полный контроль над техникой, про риск, про настоящую грязь и свободу.
+          </p>
+          <p>
+            И ещё я очень люблю рыбалку. Не как пассивный отдых, а как особый ритуал, где важно уметь ждать, читать природу и оставаться наедине с собой.
+          </p>
+        </div>
+        <div class="glass-card">
+          <h3>Soft skills</h3>
+          <ul>
+            <li>Ответственность и организованность</li>
+            <li>Работа в коллективе</li>
+            <li>Коммуникабельность</li>
+            <li>Адекватное отношение к критике</li>
+            <li>Внимательность и усидчивость</li>
+            <li>Аналитические способности</li>
+            <li>Эмоциональный интеллект</li>
+            <li>Быстро усваиваю новые знания</li>
+          </ul>
+        </div>
+        <div class="glass-card">
+          <h3>Hard skills</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Git</li>
+            <li>Аналитическая документация(BPMN, ERD, IDEF, USM, UML, блок-схемы, eEPC ТЗ, БТ, ЧТЗ...)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section projects" id="projects">
+      <div class="section-title">
+        <p class="eyebrow">My work</p>
+        <h2>Проекты и pet-проекты</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <h3>Landing Page</h3>
+          <p>
+            Адаптивная посадочная страница с современным дизайном,
+            анимациями и аккуратной структурой.
+          </p>
+          <div class="project-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+          <a href="#" class="project-link">Подробнее →</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <h3>Todo App</h3>
+          <p>
+            Приложение для задач с добавлением, удалением и сохранением данных
+            в браузере.
+          </p>
+          <div class="project-stack">
+            <span>JavaScript</span>
+            <span>LocalStorage</span>
+          </div>
+          <a href="#" class="project-link">Подробнее →</a>
+        </article>
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <h3>Portfolio Website</h3>
+          <p>
+            Личный сайт-портфолио с информацией о себе.
+          </p>
+          <div class="project-stack">
+            <span>UI</span>
+            <span>CSS</span>
+            <span>Responsive</span>
+          </div>
+          <a href="#" class="project-link">Подробнее →</a>
+        </article>
+      </div>
+    </section>
+    <section class="section contact" id="contact">
+      <div class="contact-card">
+        <p class="eyebrow">Contact</p>
+        <h2>Давай работать вместе</h2>
+        <p>
+          Я открыт к вашим предложениям, стажировке и новым проектам.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:levitskiy.danilaa@gmail.com">levitskiy.danilaa@gmail.com</a>
+          <a href="https://github.com/Danilagor1lla" target="_blank">GitHub</a>
+          <a href="https://t.me/levitskiy_danila" target="_blank">Telegram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
