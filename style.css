@@ -102,6 +102,7 @@ ul {
 .section {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   padding: 120px 8%;
   z-index: 2;
 }
@@ -268,38 +269,17 @@ body.light-theme .island-nav {
   box-shadow: var(--shadow), var(--glass-inset);
 }
 
+.hero-card img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    display: block;
+    object-fit: cover;
+}
+
 .hero-card {
   overflow: hidden;
   transform: rotate(2deg);
-}
-
-.card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px;
-  border-bottom: 1px solid var(--border);
-  color: var(--muted);
-}
-
-.dots {
-  display: flex;
-  gap: 7px;
-}
-
-.dots span {
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: var(--accent);
-}
-
-.dots span:nth-child(2) {
-  background: var(--accent-2);
-}
-
-.dots span:nth-child(3) {
-  background: var(--accent-3);
 }
 
 pre {
